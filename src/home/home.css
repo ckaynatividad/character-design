@@ -1,6 +1,9 @@
 main {
   display: flex;
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 100px;
+  padding-left: 10px;
   justify-content: space-evenly;
   background-color: rgb(255, 255, 255);
   width: fit-content;
@@ -12,13 +15,12 @@ main {
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 
 #editor {
-  padding: 10px;
-  border-right: 12pt solid gray;
-  border-bottom: 12pt solid gray;
-  height: fit-content;
-  line-height: 17pt;
   font-family: 'Titillium Web', sans-serif;
-  margin-right: 50px;
+  border-right: 12pt solid rgb(236, 236, 236);
+  border-bottom: 12pt solid rgb(236, 236, 236);
+  height: fit-content;
+  margin-right: 90px;
+  margin-top: 175px;
 }
 
 p {

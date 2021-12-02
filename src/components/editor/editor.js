@@ -24,7 +24,7 @@ export default function Editor({ head, setHead, setHeadCount, body, setBody, set
       <div className="form-control">
         <label>Head </label>
         <select value={head} onChange={handleHead}>
-          <option value="bird">{'bird'}</option>
+          <option value="bird">bird</option>
           <option value="duck">duck</option>
           <option value="dog">dog</option>
           <option value="horse">horse</option>
@@ -33,7 +33,7 @@ export default function Editor({ head, setHead, setHeadCount, body, setBody, set
       <div className="form-control">
         <label>Body </label>
         <select value={body} onChange={handleBody}>
-          <option value="blue">{'blue'}</option>
+          <option value="blue">blue</option>
           <option value="fancy">fancy</option>
           <option value="pink">pink</option>
           <option value="red">red</option>
@@ -42,7 +42,7 @@ export default function Editor({ head, setHead, setHeadCount, body, setBody, set
       <div className="form-control">
         <label>Bottom </label>
         <select value={bottom} onChange={handleBottom}>
-          <option value="single-leg">{'single leg'}</option>
+          <option value="single-leg">single leg</option>
           <option value="blue-jeans">blue jeans</option>
           <option value="pant-leg">pant leg</option>
         </select>

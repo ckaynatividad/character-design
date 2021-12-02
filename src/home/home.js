@@ -6,9 +6,9 @@ import Editor from '../components/editor/editor';
 import './home.css';
 
 export default function Home() {
-  const [head, setHead] = useState('bird');
-  const [body, setBody] = useState('blue');
-  const [bottom, setBottom] = useState('single leg');
+  const [head, setHead] = useState('');
+  const [body, setBody] = useState('');
+  const [bottom, setBottom] = useState('');
   const [phrase, setPhrase] = useState('');
   const [headCount, setHeadCount] = useState(0);
   const [bodyCount, setBodyCount] = useState(0);
