@@ -18,19 +18,18 @@ export default function Home() {
   return (
     <main>
       {}
+      <div id="editor">
+        <Editor {...{ head, setHead, body, setBody, bottom, setBottom, phrase, setPhrase, headCount, setHeadCount, bodyCount, setBodyCount, bottomCount, setBottomCount, phraseList, setPhraseList }} />
+        {<p>You have changed the head {headCount} times, the body {bodyCount} times, and the pants {bottomCount} times. And nobody can forget your character&apos;s classic catchphrases:</p>}
+        {!!phraseList.length && (
+          <div id="list">
+            {phraseList.map((elem) => (
+              <p key={elem}>{elem}</p>
+            ))}
+          </div>
+        )}
+      </div>
       <Preview {...{ head, body, bottom, phrase }} />
-      <Editor {...{ head, setHead, body, setBody, bottom, setBottom, phrase, setPhrase, headCount, setHeadCount, bodyCount, setBodyCount, bottomCount, setBottomCount, phraseList, setPhraseList }} />
-      {!!headCount && <p>You have changed the head {headCount} times,</p>}
-      {!!bodyCount && <p>the body {bodyCount} times,</p>}
-      {!!bottomCount && <p>and the pants {bottomCount} times.</p>}
-      {!!phraseList.length && (
-        <div>
-          <p>And nobody can forget your character catchphrases:</p>
-          {phraseList.map((elem) => (
-            <p key={elem}>{elem}</p>
-          ))}
-        </div>
-      )}
     </main>
   );
 }

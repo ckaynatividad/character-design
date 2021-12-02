@@ -22,7 +22,7 @@ export default function Editor({ head, setHead, setHeadCount, body, setBody, set
   return (
     <div className="editor">
       <div className="form-control">
-        <label>head </label>
+        <label>Head </label>
         <select value={head} onChange={handleHead}>
           <option value="bird">{'bird'}</option>
           <option value="duck">duck</option>
@@ -31,7 +31,7 @@ export default function Editor({ head, setHead, setHeadCount, body, setBody, set
         </select>
       </div>
       <div className="form-control">
-        <label>body </label>
+        <label>Body </label>
         <select value={body} onChange={handleBody}>
           <option value="blue">{'blue'}</option>
           <option value="fancy">fancy</option>
@@ -40,15 +40,15 @@ export default function Editor({ head, setHead, setHeadCount, body, setBody, set
         </select>
       </div>
       <div className="form-control">
-        <label>bottom </label>
+        <label>Bottom </label>
         <select value={bottom} onChange={handleBottom}>
           <option value="single-leg">{'single leg'}</option>
-          <option value="blue jeans">blue jeans</option>
-          <option value="pant leg">pant leg</option>
+          <option value="blue-jeans">blue jeans</option>
+          <option value="pant-leg">pant leg</option>
         </select>
       </div>
       <div className="form-control">
-        <label htmlFor="phrase">Catchphrase </label>
+        <label htmlFor="phrase">Add a catch phrase </label>
         <input name="phrase" type="text" value={phrase} onChange={(e) => setPhrase(e.target.value)}/>
         <button onClick={handleClick}>Add</button>
       </div>

@@ -1,0 +1,6 @@
+.preview {
+  width: 145px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
