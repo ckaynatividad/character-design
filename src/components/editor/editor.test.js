@@ -1,12 +1,12 @@
 import { render, screen } from '@testing-library/react';
-import Home from './home/home';
+import Editor from './editor';
 
-test('renders home in App', () => {
+test ('renders the editor panel', () => {
   const container = render(
-    <Home 
+    <Editor 
       head="bird"
       body="fancy"
-      bottom="pantleg"
+      bottom="pant leg"
       phrase="meow"
     />
   );
