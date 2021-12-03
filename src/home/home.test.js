@@ -1,5 +1,4 @@
-import { render, screen } from '@testing-library/react';
-import Home from './home';
+import { render } from '@testing-library/react';
 import Preview from '../components/preview/preview';
 import Editor from '../components/editor/editor';
 
@@ -8,4 +7,4 @@ test('renders editor and preview in home panel', () => {
     <><Editor /><Preview /></>
   );
   expect(container).toMatchSnapshot();
-})
+});
